@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaisModule } from './Pais/Pais.module';
+import { EquipoModule } from './Equipo/Equipo.module';
+import { MundialModule } from './Mundial/Mundial.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { PaisModule } from './Pais/Pais.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PaisModule
+    PaisModule,
+    EquipoModule,
+    MundialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
