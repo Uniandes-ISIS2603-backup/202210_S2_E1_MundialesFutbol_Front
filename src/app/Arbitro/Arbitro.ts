@@ -1,6 +1,6 @@
 import { Pais } from "../Pais/Pais";
 
-export class Abritro {
+export class Arbitro {
   id : number;
   nombre : string;
   imagenArbitro : string;

@@ -15,7 +15,7 @@ export class MundialListComponent implements OnInit {
 
   getMundiales(): void {
     this.mundialService.getMundiales().subscribe(
-      {next: mundiales => this.mundiales = mundiales, error: e => console.error(e)});
+      {next: mundiales => this.mundiales = mundiales, error: e => console.error(e,"Error en el servicio")});
   }
 
   ngOnInit() {

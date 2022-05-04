@@ -1,5 +1,6 @@
 import { Mundial } from "../Mundial/Mundial";
 import { Pais } from "../Pais/Pais";
+import { Entrenador } from "../Entrenador/Entrenador";
 export class Equipo {
   id :number;
   anio : number;

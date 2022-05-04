@@ -1,6 +1,9 @@
 import { Equipo } from "./Equipo";
 import { Pais } from "../Pais/Pais";
-import { Mundial } from "./Mundial";
+import { Mundial } from "../Mundial/Mundial";
+import { Entrenador } from "../Entrenador/Entrenador";
+import { Jugador } from "../Jugador/Jugador";
+import { Partido } from "../Partido/Partido";
 
 export class EquipoDetail extends Equipo{
   jugadores : Array<Jugador> = [];

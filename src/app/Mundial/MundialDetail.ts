@@ -1,6 +1,8 @@
 import {Equipo} from '../Equipo/Equipo';
 import { Pais } from '../Pais/Pais';
 import { Mundial } from './Mundial';
+import { Arbitro } from '../Arbitro/Arbitro';
+import { Partido } from '../Partido/Partido';
 export class MundialDetail extends Mundial {
   equipos : Array<Equipo> = [];
   paises : Array<Pais> = [];
