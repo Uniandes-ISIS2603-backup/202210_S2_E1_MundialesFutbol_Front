@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Arbitro } from '../Arbitro';
+import { ArbitroService } from '../Arbitro.service';
+import { ArbitroDetail } from '../ArbitroDetail';
 
 @Component({
   selector: 'app-Arbitro-list',
@@ -9,9 +11,16 @@ import { Arbitro } from '../Arbitro';
 export class ArbitroListComponent implements OnInit {
 
   arbitros: Array<Arbitro> = [];
-  constructor() { }
+  constructor(private arbitroService: ArbitroService) { }
+
+  getArbitro(): void {
+    this.arbitroService.getArbitro().subscribe((arbitros) => {
+      this.arbitros = arbitros;
+    });
+  }
 
   ngOnInit() {
+    this.getArbitro();
   }
 
 }
