@@ -14,8 +14,8 @@ export class JugadorListComponent implements OnInit {
   constructor(private JugadorService: JugadorService) { }
 
   getJugador(): void {
-    this.JugadorService.getJugador().subscribe((partidos) => {
-      this.Jugador = partidos;
+    this.JugadorService.getJugador().subscribe((Jugador) => {
+      this.Jugador = Jugador;
     });
   }
 
