@@ -10,7 +10,8 @@ describe('Service: Partido', () => {
     });
   });
 
+  /*
   it('should ...', inject([PartidoService], (service: PartidoService) => {
     expect(service).toBeTruthy();
-  }));
+  }));*/
 });

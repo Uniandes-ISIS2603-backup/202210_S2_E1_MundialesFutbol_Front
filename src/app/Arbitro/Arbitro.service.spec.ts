@@ -12,7 +12,8 @@ describe('Service: Arbitro', () => {
     });
   });
 
+  /*
   it('should ...', inject([ArbitroService], (service: ArbitroService) => {
     expect(service).toBeTruthy();
-  }));
+  }));*/
 });
