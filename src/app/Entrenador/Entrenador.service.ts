@@ -14,7 +14,7 @@ export class EntrenadorService {
   private apiUrl: string = environment.baseUrl + "/api/entrenador"
 constructor(private http: HttpClient) { }
 
-getArbitros(): Observable<EntrenadorDetail[]> {
+getEntrenador(): Observable<EntrenadorDetail[]> {
   return this.http
   .get<EntrenadorDetail[]>(this.apiUrl)
   .pipe(

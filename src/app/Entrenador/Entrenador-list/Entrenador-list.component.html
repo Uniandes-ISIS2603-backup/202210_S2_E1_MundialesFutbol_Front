@@ -1,3 +1,22 @@
-<p>
-  Entrenador-list works!
-</p>
+<div class="container-fluid">
+  <div class="table">
+    <div class="table table-striped table-bordered table-hover">
+      <thead>
+        <th>id</th>
+        <th>nombre</th>
+        <th>imagenEntrenador</th>
+        <th>biografia/th>
+
+      </thead>
+      <tbody>
+        <tr *ngFor="let entrenador of Entrenador">
+          <td>{{entrenador.id}}</td>
+          <td>{{entrenador.nombre}}</td>
+          <td>{{entrenador.imgEntrenador}</td>
+          <td>{{entrenador.biografia}}</td>
+        </tr>
+      </tbody>
+    </div>
+  </div>
+</div>
+
