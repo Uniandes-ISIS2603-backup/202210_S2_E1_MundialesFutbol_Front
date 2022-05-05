@@ -3,19 +3,19 @@ import { HttpClient } from '@angular/common/http';
 
 import { environment } from 'src/environments/environment';
 import { catchError, Observable, throwError } from 'rxjs';
-import { ArbitroDetail } from './ArbitroDetail';
+import { PartidoDetail } from './PartidoDetail';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ArbitroService {
+export class PartidoService {
 
-  private apiUrl: string = environment.baseUrl + "/api/arbitros"
+  private apiUrl: string = environment.baseUrl + "/api/partidos"
 constructor(private http: HttpClient) { }
 
-getArbitros(): Observable<ArbitroDetail[]> {
+getPartidos(): Observable<PartidoDetail[]> {
   return this.http
-  .get<ArbitroDetail[]>(this.apiUrl)
+  .get<PartidoDetail[]>(this.apiUrl)
   .pipe(
     catchError((err) => throwError(() => new Error("Error en el servicio")))
     )

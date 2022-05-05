@@ -13,7 +13,7 @@ export class ArbitroListComponent implements OnInit {
   constructor(private arbitroService: ArbitroService) { }
 
   getArbitros(): void {
-    this.arbitroService.getArbitro().subscribe((arbitros) => {
+    this.arbitroService.getArbitros().subscribe((arbitros) => {
       this.arbitros = arbitros;
     });
   }
@@ -21,5 +21,4 @@ export class ArbitroListComponent implements OnInit {
   ngOnInit() {
     this.getArbitros();
   }
-
 }
