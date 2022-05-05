@@ -10,7 +10,7 @@ import { ArbitroDetail } from '../ArbitroDetail';
 })
 export class ArbitroListComponent implements OnInit {
 
-  arbitros: Array<Arbitro> = [];
+  arbitros: Array<ArbitroDetail> = [];
   constructor(private arbitroService: ArbitroService) { }
 
   getArbitro(): void {

@@ -3,3 +3,9 @@ img {
   width: auto;
   max-width: 400px;
  }
+
+ button.link {
+  background:none;
+  border:none;
+  color: #13757e;
+}
