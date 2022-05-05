@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Goles } from '../Goles.ts';
+import { GolesService } from '../Goles.service';
 
 @Component({
   selector: 'app-Goles-list',
@@ -9,9 +10,17 @@ import { Goles } from '../Goles.ts';
 export class GolesListComponent implements OnInit {
 
   goles: Array<Goles> = [];
-  constructor() { }
+
+  constructor(private golesService: GolesService) { }
+
+  getGoles(): void{
+    this.golesService.getGoles().subscribe((goles) => {
+      this.goles = goles;
+    });
+  }
 
   ngOnInit() {
+    this.getGoles();
   }
 
 }
