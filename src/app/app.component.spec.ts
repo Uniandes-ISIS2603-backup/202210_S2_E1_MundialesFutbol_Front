@@ -2,7 +2,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { ArbitroListComponent } from './Arbitro/Arbitro-list/Arbitro-list.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -11,7 +10,7 @@ describe('AppComponent', () => {
         RouterTestingModule, HttpClientModule
       ],
       declarations: [
-        AppComponent, ArbitroListComponent
+        AppComponent
       ],
     }).compileComponents();
   });
