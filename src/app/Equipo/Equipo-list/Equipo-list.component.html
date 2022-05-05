@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="table">
+    <div class="table table-striped table-bordered table-hover">
+      <thead>
+        <th>Pais</th>
+        <th>Grupo</th>
+        <th>Año</th>
+        <th>Entrenador</th>
+        <th>Escudo</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let equipo of equipos">
+          <td>{{equipo.pais.nombre}}</td>
+          <td>{{equipo.grupo}}</td>
+          <td>{{equipo.anio}}</td>
+          <td>{{equipo.entrenador.nombre}}</td>
+          <td><img src={{equipo.imgEscudo}} style="width:6rem;height:8rem"></td>
+        </tr>
+      </tbody>
+    </div>
+  </div>
+</div>

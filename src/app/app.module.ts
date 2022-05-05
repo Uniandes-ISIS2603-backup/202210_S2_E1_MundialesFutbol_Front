@@ -3,6 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PaisModule } from './Pais/Pais.module';
+import { EquipoModule } from './Equipo/Equipo.module';
+import { MundialModule } from './Mundial/Mundial.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ArbitroModule } from './Arbitro/Arbitro.module';
+import { EntrenadorModule } from './Entrenador/Entrenador.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +16,13 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PaisModule,
+    EquipoModule,
+    MundialModule,
+    ArbitroModule,
+    EntrenadorModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
