@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Pais } from '../Pais';
+
+import { PaisService } from '../Pais.service';
+
 @Component({
   selector: 'app-Pais-list',
   templateUrl: './Pais-list.component.html',
@@ -7,9 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaisListComponent implements OnInit {
 
-  constructor() { }
+  paises: Array<Pais> = [];
+
+  constructor(private paisService : PaisService ) { }
+
+  getPaises(): void {
+    this.paisService.getPaises().subscribe((paises) =>{
+      this.paises = paises;
+    })
+  }
 
   ngOnInit() {
+    this.getPaises();
   }
 
 }

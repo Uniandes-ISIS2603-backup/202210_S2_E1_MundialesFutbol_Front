@@ -8,6 +8,7 @@ import { EquipoModule } from './Equipo/Equipo.module';
 import { MundialModule } from './Mundial/Mundial.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ArbitroModule } from './Arbitro/Arbitro.module';
+import { EntrenadorModule } from './Entrenador/Entrenador.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ArbitroModule } from './Arbitro/Arbitro.module';
     EquipoModule,
     MundialModule,
     ArbitroModule,
+    EntrenadorModule,
     HttpClientModule
   ],
   providers: [],
