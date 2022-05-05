@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="table">
+    <div class="table table-striped table-bordered table-hover">
+      <thead>
+        <th>id</th>
+        <th>nombre</th>
+        <th>edad</th>
+        <th>foto</th>
+        <th>fechaNacimiento</th>
+        <th>ligaActual</th>
+        <th>equipoActual</th>
+        <th>posicion</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let jugador of jugadores">
+          <td>{{jugador.id}}</td>
+          <td>{{jugador.nombre}}</td>
+          <td>{{jugador.edad}}</td>
+          <td>{{jugador.foto}}</td>
+          <td>{{jugador.fechaNacimiento}}</td>
+          <td>{{jugador.ligaActual}}</td>
+          <td>{{jugador.equipoActual}}</td>
+          <td>{{jugador.posicion}}</td>
+        </tr>
+      </tbody>
+    </div>
+  </div>
+</div>
