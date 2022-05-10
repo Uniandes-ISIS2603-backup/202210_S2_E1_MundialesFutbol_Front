@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ArbitroService } from '../Arbitro.service';
 import { ArbitroDetail } from '../ArbitroDetail';
+import { Arbitro } from '../Arbitro';
 
 @Component({
   selector: 'app-Arbitro-list',
@@ -10,12 +11,19 @@ import { ArbitroDetail } from '../ArbitroDetail';
 export class ArbitroListComponent implements OnInit {
 
   arbitros: Array<ArbitroDetail> = [];
+  selectedArbitro!: ArbitroDetail;
+  selected = false;
   constructor(private arbitroService: ArbitroService) { }
 
   getArbitros(): void {
     this.arbitroService.getArbitros().subscribe((arbitros) => {
       this.arbitros = arbitros;
     });
+  }
+
+  onSelected(arbitro: ArbitroDetail): void {
+    this.selected = true;
+    this.selectedArbitro = arbitro;
   }
 
   ngOnInit() {

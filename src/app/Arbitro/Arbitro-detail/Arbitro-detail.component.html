@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <p class="h3 p-3">{{ arbitroDetail.nombre }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img
+          class="img-fluid"
+          src="{{ arbitroDetail.imagenArbitro }}"
+          alt="{{ arbitroDetail.nombre }}"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt class="bold">Mundiales</dt>
+        <dd class="caption" *ngFor="let mundial of arbitroDetail.mundiales">
+          {{ mundial.anio }}
+         </dd>
+        <dt>Nacionalidad</dt>
+        <dd>{{ arbitroDetail.nacionalidad.nombre }}</dd>
+        <hr />
+        <dt class="bold">Partidos de linea</dt>
+        <dd class="caption" *ngFor="let partido of arbitroDetail.partidosLinea">
+          {{ partido.ciudad }} {{ partido.fecha }}
+         </dd>
+        <hr />
+        <dt class="bold">Partidos principal</dt>
+        <dd class="caption" *ngFor="let partido of arbitroDetail.partidosPrincipal">
+          {{ partido.ciudad }} {{ partido.fecha }}
+         </dd>
+      </dl>
+    </div>
+  </div>
+ </div>

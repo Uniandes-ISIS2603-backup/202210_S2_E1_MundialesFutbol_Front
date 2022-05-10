@@ -1,3 +1,8 @@
+<div *ngIf="selected">
+  <app-Arbitro-detail [arbitroDetail]="selectedArbitro"></app-Arbitro-detail>
+</div>
+
+ <hr />
 <div class="container-fluid">
   <div class="row">
     <div class="col mb-2" *ngFor="let arbitro of arbitros">
@@ -6,6 +11,7 @@
                 class="card-img-top"
                 src="{{ arbitro.imagenArbitro }}"
                 alt="{{ arbitro.nombre }}"
+                (click)="onSelected(arbitro)"
               />
               <div class="card-body">
                 <h5 class="card-title">{{ arbitro.nombre }}</h5>
