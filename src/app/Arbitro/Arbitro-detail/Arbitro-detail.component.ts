@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Arbitro } from '../Arbitro';
 import { ArbitroDetail } from '../ArbitroDetail';
 
 @Component({
