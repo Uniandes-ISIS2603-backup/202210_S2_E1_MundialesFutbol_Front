@@ -14,12 +14,13 @@ export class MundialDetail extends Mundial {
     anio : number,
     fechainicio : Date,
     imgMascota : string,
+    mundial : string,
     equipos : Array<Equipo>,
     paises : Array<Pais>,
     arbitros : Array<Arbitro>,
     partidos : Array<Partido>,
   ) {
-    super(id, nombreMascota, anio, fechainicio, imgMascota);
+    super(id, nombreMascota, anio, fechainicio, imgMascota, mundial);
     this.equipos = equipos;
     this.paises = paises;
     this.arbitros = arbitros;
