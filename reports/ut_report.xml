@@ -1,62 +1,42 @@
 <testExecutions version="1">
-  <file path="src/app/Entrenador/Entrenador.service.spec.ts">
-    <testCase name="Service: Entrenador should ..." duration="23">
-      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[EntrenadorService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'EntrenadorService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[EntrenadorService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
-    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
-    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
-    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
-    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
-    at Object.EntrenadorService_Factory [as factory] (ng:///EntrenadorService/ɵfac.js:4:45)
-    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
-    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
-    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
-    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
+  <file path="src/app/Partido/Partido-list/Partido-list.component.spec.ts">
+    <testCase name="PartidoListComponent should create" duration="92"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should have as title 'museums-front'" duration="20"/>
+    <testCase name="AppComponent should render title" duration="13">
+      <failure message="Error">Error: Expected undefined to contain 'museums-front app is running!'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/app.component.spec.ts:34:66)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
 </failure>
     </testCase>
-  </file>
-  <file path="src/app/Arbitro/Arbitro-detail/Arbitro-detail.component.spec.ts">
-    <testCase name="ArbitroDetailComponent should create" duration="72"/>
-  </file>
-  <file path="src/app/Arbitro/Arbitro-list/Arbitro-list.component.spec.ts">
-    <testCase name="ArbitroListComponent should have an img element" duration="50"/>
-    <testCase name="ArbitroListComponent should create" duration="14"/>
-  </file>
-  <file path="src/app/Goles/Goles-list/Goles-list.component.spec.ts">
-    <testCase name="GolesListComponent should create" duration="18"/>
-  </file>
-  <file path="src/app/Jugador/Jugador.service.spec.ts">
-    <testCase name="Service: Jugador should ..." duration="6">
-      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[JugadorService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'JugadorService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[JugadorService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
-    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
-    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
-    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
-    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
-    at Object.JugadorService_Factory [as factory] (ng:///JugadorService/ɵfac.js:4:42)
-    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
-    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
-    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
-    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
-</failure>
-    </testCase>
+    <testCase name="AppComponent should create the app" duration="5"/>
   </file>
   <file path="src/app/Mundial/Mundial-detail/Mundial-detail.component.spec.ts">
-    <testCase name="MundialDetailComponent should create" duration="22"/>
+    <testCase name="MundialDetailComponent should create" duration="21"/>
+  </file>
+  <file path="src/app/Pais/Pais-list/Pais-list.component.spec.ts">
+    <testCase name="PaisListComponent should create" duration="18"/>
+    <testCase name="PaisListComponent should have an img element " duration="24"/>
+  </file>
+  <file path="src/app/Arbitro/Arbitro-list/Arbitro-list.component.spec.ts">
+    <testCase name="ArbitroListComponent should create" duration="22"/>
+    <testCase name="ArbitroListComponent should have an img element" duration="11"/>
+  </file>
+  <file path="src/app/Arbitro/Arbitro-detail/Arbitro-detail.component.spec.ts">
+    <testCase name="ArbitroDetailComponent should create" duration="18"/>
   </file>
   <file path="src/app/Partido/Partido-list/Partido-list.component.spec.ts">
-    <testCase name="PartidoListComponent should create" duration="15"/>
+    <testCase name="PartidoListComponent should create" duration="18"/>
+  </file>
+  <file path="src/app/Mundial/Mundial-list/Mundial-list.component.spec.ts">
+    <testCase name="MundialListComponent should create" duration="21"/>
+    <testCase name="MundialListComponent should have an img element" duration="9"/>
   </file>
   <file path="src/app/Entrenador/Entrenador-list/Entrenador-list.component.spec.ts">
-    <testCase name="EntrenadorListComponent should create" duration="13">
+    <testCase name="EntrenadorListComponent should create" duration="15">
       <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[EntrenadorService -&gt; HttpClient -&gt; HttpClient]: 
   NullInjectorError: No provider for HttpClient!
 error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'EntrenadorService', 'HttpClient', 'HttpClient' ] })
@@ -81,30 +61,50 @@ Error: Expected undefined to be truthy.
 </failure>
     </testCase>
   </file>
-  <file path="src/app/Partido/Partido-detail/Partido-detail.component.spec.ts">
-    <testCase name="PartidoDetailComponent should create" duration="17"/>
+  <file path="src/app/Goles/Goles-list/Goles-list.component.spec.ts">
+    <testCase name="GolesListComponent should create" duration="17"/>
   </file>
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should render title" duration="34">
-      <failure message="Error">Error: Expected undefined to contain 'museums-front app is running!'.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (src/app/app.component.spec.ts:34:66)
-    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
-    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+  <file path="src/app/Partido/Partido-detail/Partido-detail.component.spec.ts">
+    <testCase name="PartidoDetailComponent should create" duration="7"/>
+  </file>
+  <file path="src/app/Entrenador/Entrenador.service.spec.ts">
+    <testCase name="Service: Entrenador should ..." duration="9">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[EntrenadorService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'EntrenadorService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[EntrenadorService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.EntrenadorService_Factory [as factory] (ng:///EntrenadorService/ɵfac.js:4:45)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
 </failure>
     </testCase>
-    <testCase name="AppComponent should create the app" duration="12"/>
-    <testCase name="AppComponent should have as title 'museums-front'" duration="21"/>
   </file>
-  <file path="src/app/Pais/Pais-list/Pais-list.component.spec.ts">
-    <testCase name="PaisListComponent should create" duration="55"/>
-    <testCase name="PaisListComponent should have an img element " duration="30"/>
-  </file>
-  <file path="src/app/Mundial/Mundial-list/Mundial-list.component.spec.ts">
-    <testCase name="MundialListComponent should create" duration="61"/>
-    <testCase name="MundialListComponent should have an img element" duration="15"/>
-  </file>
-  <file path="src/app/Partido/Partido-list/Partido-list.component.spec.ts">
-    <testCase name="PartidoListComponent should create" duration="33"/>
+  <file path="src/app/Jugador/Jugador.service.spec.ts">
+    <testCase name="Service: Jugador should ..." duration="5">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[JugadorService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'JugadorService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[JugadorService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.JugadorService_Factory [as factory] (ng:///JugadorService/ɵfac.js:4:42)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
+</failure>
+    </testCase>
   </file>
 </testExecutions>

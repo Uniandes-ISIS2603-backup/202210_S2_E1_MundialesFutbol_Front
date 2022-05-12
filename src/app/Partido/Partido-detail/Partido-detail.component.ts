@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { PartidoService } from '../Partido.service';
 import { PartidoDetail } from '../PartidoDetail';
 
 @Component({
@@ -9,7 +10,8 @@ import { PartidoDetail } from '../PartidoDetail';
 export class PartidoDetailComponent implements OnInit {
 
   @Input() partidoDetail!: PartidoDetail;
-  constructor() { }
+
+  constructor(private partidoService: PartidoService) { }
 
   ngOnInit() {
   }
