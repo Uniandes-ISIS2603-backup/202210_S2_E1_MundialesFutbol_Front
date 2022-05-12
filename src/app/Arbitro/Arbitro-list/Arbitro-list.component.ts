@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ArbitroService } from '../Arbitro.service';
 import { ArbitroDetail } from '../ArbitroDetail';
-import { Arbitro } from '../Arbitro';
 
 @Component({
   selector: 'app-Arbitro-list',

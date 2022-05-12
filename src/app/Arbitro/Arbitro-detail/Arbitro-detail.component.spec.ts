@@ -4,6 +4,11 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { ArbitroDetailComponent } from './Arbitro-detail.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ArbitroService } from '../Arbitro.service';
+import { ArbitroDetail } from '../ArbitroDetail';
+import faker from '@faker-js/faker';
+import { Pais } from 'src/app/Pais/Pais';
 
 describe('ArbitroDetailComponent', () => {
   let component: ArbitroDetailComponent;
@@ -11,7 +16,9 @@ describe('ArbitroDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ArbitroDetailComponent ]
+      imports: [HttpClientModule],
+      declarations: [ ArbitroDetailComponent ],
+      providers: [ArbitroService]
     })
     .compileComponents();
   }));
@@ -19,6 +26,18 @@ describe('ArbitroDetailComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ArbitroDetailComponent);
     component = fixture.componentInstance;
+    let pais = new Pais(
+      faker.datatype.number(),
+      faker.name.firstName(),
+      faker.image.imageUrl()
+    );
+    component.arbitroDetail= new ArbitroDetail(
+      faker.datatype.number(),
+      faker.name.firstName(),
+      faker.image.imageUrl(),
+      pais,
+      [],[],[]
+      );
     fixture.detectChanges();
   });
 
