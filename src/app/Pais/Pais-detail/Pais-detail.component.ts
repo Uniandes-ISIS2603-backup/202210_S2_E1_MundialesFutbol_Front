@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Pais } from '../Pais';
+import { PaisService } from '../Pais.service';
 import { PaisDetail } from '../PaisDetail';
 
 @Component({
@@ -12,7 +13,7 @@ export class PaisDetailComponent implements OnInit {
 
  @Input() paisDetail!: PaisDetail;
 
-  constructor() { }
+  constructor(private paisService: PaisService) { }
 
   ngOnInit() {
   }

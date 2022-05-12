@@ -11,7 +11,7 @@ import { PaisDetail  } from './PaisDetail';
 
 
 export class PaisService {
-  private apiUrl: string = environment.baseUrl + 'paises'
+  private apiUrl: string = environment.baseUrl + '/api/paises'
 
   constructor(private http: HttpClient) {}
 

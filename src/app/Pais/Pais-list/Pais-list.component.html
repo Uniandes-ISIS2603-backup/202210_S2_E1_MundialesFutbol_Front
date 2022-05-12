@@ -11,6 +11,7 @@
                 class="card-img-top"
                 src="{{ pais.imgBandera }}"
                 alt="{{ pais.nombre}}"
+                (click)="onSelected(pais)"
               />
               <div class="card-body">
                 <h5 class="card-title">{{ pais.nombre }}</h5>
