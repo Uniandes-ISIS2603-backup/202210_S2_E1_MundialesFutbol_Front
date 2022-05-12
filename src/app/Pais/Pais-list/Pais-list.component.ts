@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Pais } from '../Pais';
 
 import { PaisService } from '../Pais.service';
+import { PaisDetail } from '../PaisDetail';
 
 @Component({
   selector: 'app-Pais-list',
@@ -11,7 +12,9 @@ import { PaisService } from '../Pais.service';
 })
 export class PaisListComponent implements OnInit {
 
-  paises: Array<Pais> = [];
+  paises: Array<PaisDetail> = [];
+  selectedPais!: PaisDetail;
+  selected =false;
 
   constructor(private paisService : PaisService ) { }
 
@@ -19,6 +22,11 @@ export class PaisListComponent implements OnInit {
     this.paisService.getPaises().subscribe((paises) =>{
       this.paises = paises;
     })
+  }
+
+  onSelected(pais: PaisDetail): void {
+    this.selected = true;
+    this.selectedPais = pais;
   }
 
   ngOnInit() {

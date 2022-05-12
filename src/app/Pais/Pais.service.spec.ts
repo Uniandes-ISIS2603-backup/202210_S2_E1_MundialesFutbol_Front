@@ -10,8 +10,8 @@ describe('Service: Pais', () => {
     });
   });
 
-  /*
+
   it('should ...', inject([PaisService], (service: PaisService) => {
     expect(service).toBeTruthy();
-  }));*/
+  }));
 });
