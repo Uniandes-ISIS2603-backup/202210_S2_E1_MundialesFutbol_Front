@@ -1,3 +1,38 @@
-<p>
-  Partido-detail works!
-</p>
+
+  <div class="container-fluid">
+    <!--<p class="h3 p-3">{{ partidoDetail.equipos[0].pais.nombre }} vs {{partidoDetail.equipos[1].pais.nombre}} </p>-->
+    <div class="row">
+      <div class="col-2">
+        <div class="thumb">
+          <!--<img
+            class="img-fluid"
+            src="{{ partidoDetail.equipos[0].imgEscudo }}"
+            alt="{{ partidoDetail.equipos[0].pais.nombre }}"
+          />-->
+        </div>
+      </div>
+      <div class="col">
+        <dl>
+          <dt class="bold">Jueces de linea</dt>
+          <dd class="caption" *ngFor="let jueces of partidoDetail.juecesLinea">
+            {{ jueces.nombre }}
+           </dd>
+          <dt>Jugadores</dt>
+          <dd class="caption" *ngFor="let jugadores of partidoDetail.jugadores">
+            {{ jugadores.nombre }} - {{ jugadores.posicion }} - {{ jugadores.numeroCamisa }}
+          </dd>
+          <hr />
+          <dt class="bold">Estadio</dt>
+          <dd class="caption">
+            {{ partidoDetail.estadio }}
+          </dd>
+          <hr />
+          <dt class="bold">Partidos principal</dt>
+          <dd class="caption">
+            {{ partidoDetail.ciudad }}
+           </dd>
+        </dl>
+      </div>
+    </div>
+   </div>
+

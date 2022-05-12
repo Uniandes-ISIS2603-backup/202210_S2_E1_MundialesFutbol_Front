@@ -3,36 +3,34 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { EntrenadorListComponent } from './Entrenador-list.component';
-import { HttpClientModule } from '@angular/common/http';
-import { EntrenadorService } from '../Entrenador.service';
-import { EntrenadorDetail } from '../EntrenadorDetail';
+import { EntrenadorDetailComponent } from './Entrenador-detail.component';
 import faker from '@faker-js/faker';
+import { Equipo } from 'src/app/Equipo/Equipo';
+import { EntrenadorDetail } from '../EntrenadorDetail';
 
-describe('EntrenadorListComponent', () => {
-  let component: EntrenadorListComponent;
-  let fixture: ComponentFixture<EntrenadorListComponent>;
+describe('EntrenadorDetailComponent', () => {
+  let component: EntrenadorDetailComponent;
+  let fixture: ComponentFixture<EntrenadorDetailComponent>;
   let debug: DebugElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule],
-      declarations: [ EntrenadorListComponent ],
-      providers: [EntrenadorService]
+      declarations: [ EntrenadorDetailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EntrenadorListComponent);
+    fixture = TestBed.createComponent(EntrenadorDetailComponent);
     component = fixture.componentInstance;
-    new EntrenadorDetail(
+
+    component.Entrenador = new EntrenadorDetail(
       faker.datatype.number(),
       faker.name.firstName(),
       faker.name.firstName(),
       faker.name.firstName(),
       []
-    )
+      );
 
     fixture.detectChanges();
   });
