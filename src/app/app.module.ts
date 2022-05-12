@@ -9,6 +9,8 @@ import { MundialModule } from './Mundial/Mundial.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ArbitroModule } from './Arbitro/Arbitro.module';
 import { EntrenadorModule } from './Entrenador/Entrenador.module';
+import { PartidoModule } from './Partido/Partido.module';
+import { GolesModule } from './Goles/Goles.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { EntrenadorModule } from './Entrenador/Entrenador.module';
     MundialModule,
     ArbitroModule,
     EntrenadorModule,
+    PartidoModule,
+    GolesModule,
     HttpClientModule
   ],
   providers: [],

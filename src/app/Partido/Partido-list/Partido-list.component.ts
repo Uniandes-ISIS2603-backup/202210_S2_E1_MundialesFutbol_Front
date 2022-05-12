@@ -10,15 +10,22 @@ import { PartidoDetail } from '../PartidoDetail';
 export class PartidoListComponent implements OnInit {
 
   partidos: Array<PartidoDetail> = [];
+  selectedPartido!: PartidoDetail;
+  selected = false;
   constructor(private partidoService: PartidoService) { }
 
-  getArbitros(): void {
+  getPartidos(): void {
     this.partidoService.getPartidos().subscribe((partidos) => {
       this.partidos = partidos;
     });
   }
 
+  onSelected(partido: PartidoDetail): void {
+    this.selected = true;
+    this.selectedPartido = partido;
+  }
+
   ngOnInit() {
-    this.getArbitros();
+    this.getPartidos();
   }
 }

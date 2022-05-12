@@ -10,6 +10,8 @@ import{ MundialService } from '../Mundial.service';
 })
 export class MundialListComponent implements OnInit {
   mundiales: Array<MundialDetail> = [];
+  selected = false;
+  selectedMundial!: MundialDetail;
 
   constructor(private mundialService: MundialService) { }
 
@@ -20,6 +22,12 @@ export class MundialListComponent implements OnInit {
 
   ngOnInit() {
     this.getMundiales();
+  }
+
+  onSelected(mundial: MundialDetail): void {
+    this.selected = true;
+    this.selectedMundial = mundial;
+    console.log(this.selectedMundial);
   }
 
 }

@@ -10,12 +10,19 @@ import { ArbitroDetail } from '../ArbitroDetail';
 export class ArbitroListComponent implements OnInit {
 
   arbitros: Array<ArbitroDetail> = [];
+  selectedArbitro!: ArbitroDetail;
+  selected = false;
   constructor(private arbitroService: ArbitroService) { }
 
   getArbitros(): void {
     this.arbitroService.getArbitros().subscribe((arbitros) => {
       this.arbitros = arbitros;
     });
+  }
+
+  onSelected(arbitro: ArbitroDetail): void {
+    this.selected = true;
+    this.selectedArbitro = arbitro;
   }
 
   ngOnInit() {

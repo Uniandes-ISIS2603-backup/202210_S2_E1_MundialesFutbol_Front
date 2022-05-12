@@ -11,7 +11,7 @@ import { Goles } from './Goles.ts';
 })
 export class GolesService {
 
-  private apiUrl: string = environment.baseUrl + 'goles';
+  private apiUrl: string = environment.baseUrl + '/api/goles';
 
   constructor(private http: HttpClient) { }
 

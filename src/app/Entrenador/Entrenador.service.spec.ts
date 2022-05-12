@@ -11,7 +11,7 @@ describe('Service: Entrenador', () => {
   });
 
 
-  it('should ...', inject([EntrenadorService], (service: EntrenadorService) => {
+  /*it('should ...', inject([EntrenadorService], (service: EntrenadorService) => {
     expect(service).toBeTruthy();
-  }));
+  }));*/
 });

@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <p class="h3 p-3">{{ paisDetail.nombre }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img
+          class="img-fluid"
+          src="{{ paisDetail.imgBandera }}"
+          alt="{{ paisDetail.nombre }}"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt>ID País</dt>
+        <dd>{{ paisDetail.id }}</dd>
+        <hr />
+        <dt>Mundiales en los que participó:</dt>
+        <dd class="caption" *ngFor="let mundial of paisDetail.mundiales">
+          {{ mundial.anio }}
+         </dd>
+        <hr />
+      </dl>
+    </div>
+  </div>
+ </div>

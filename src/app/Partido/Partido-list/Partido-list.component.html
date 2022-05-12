@@ -1,18 +1,20 @@
+<div *ngIf="selected">
+  <app-Partido-detail [partidoDetail]="selectedPartido"></app-Partido-detail>
+</div>
+
 <div class="container-fluid">
   <div class="table">
     <div class="table table-striped table-bordered table-hover">
       <thead>
         <th>Ciudad</th>
         <th>Fecha</th>
-        <th>Anio</th>
         <th>Estadio</th>
         <th>Tipo partido</th>
       </thead>
       <tbody>
-        <tr *ngFor="let partido of partidos">
+        <tr *ngFor="let partido of partidos"  (click)="onSelected(partido)">
           <td>{{partido.ciudad}}</td>
           <td>{{partido.fecha}}</td>
-          <td>{{partido.anio}}</td>
           <td>{{partido.estadio}}</td>
           <td>{{partido.tipoPartido}}</td>
         </tr>
