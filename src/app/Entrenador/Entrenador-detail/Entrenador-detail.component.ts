@@ -9,6 +9,7 @@ import { EntrenadorDetail } from '../EntrenadorDetail';
 export class EntrenadorDetailComponent implements OnInit {
 
   @Input() entrenadorDetail! : EntrenadorDetail;
+  Entrenador: EntrenadorDetail | undefined;
   constructor() { }
 
   ngOnInit() {
