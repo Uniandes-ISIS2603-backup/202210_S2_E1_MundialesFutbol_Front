@@ -10,7 +10,7 @@ describe('Service: Jugador', () => {
     });
   });
 
-  it('should ...', inject([JugadorService], (service: JugadorService) => {
+  /*it('should ...', inject([JugadorService], (service: JugadorService) => {
     expect(service).toBeTruthy();
-  }));
+  }));*/
 });
