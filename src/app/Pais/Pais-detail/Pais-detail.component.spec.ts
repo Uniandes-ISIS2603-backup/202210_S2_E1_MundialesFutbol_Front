@@ -4,6 +4,11 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { PaisDetailComponent } from './Pais-detail.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PaisService } from '../Pais.service';
+import { PaisDetail } from '../PaisDetail';
+import faker from '@faker-js/faker';
+import { Pais } from 'src/app/Pais/Pais';
 
 describe('PaisDetailComponent', () => {
   let component: PaisDetailComponent;
@@ -11,7 +16,9 @@ describe('PaisDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PaisDetailComponent ]
+      imports: [HttpClientModule],
+      declarations: [ PaisDetailComponent ],
+      providers: [PaisService]
     })
     .compileComponents();
   }));
@@ -19,6 +26,13 @@ describe('PaisDetailComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(PaisDetailComponent);
     component = fixture.componentInstance;
+
+    component.paisDetail= new PaisDetail(
+      faker.datatype.number(),
+      faker.lorem.sentence(),
+      faker.image.imageUrl(),
+      [],[],[]
+      );
     fixture.detectChanges();
   });
 
