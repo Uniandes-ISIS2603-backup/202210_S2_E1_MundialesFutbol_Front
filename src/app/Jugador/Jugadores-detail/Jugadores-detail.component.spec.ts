@@ -3,30 +3,30 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { JugadorListComponent } from './Jugadores-list.component';
+import { JugadorDetailComponent } from './Jugadores-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { JugadorService } from '../Jugador.service';
 import { JugadorDetail } from '../JugadorDetail';
 import faker from '@faker-js/faker';
 
-describe('PartidoListComponent', () => {
-let component: JugadorListComponent;
-let fixture: ComponentFixture<JugadorListComponent>;
+describe('JugadorDetailComponent', () => {
+let component: JugadorDetailComponent;
+let fixture: ComponentFixture<JugadorDetailComponent>;
 let debug: DebugElement;
 
 beforeEach(async(() => {
   TestBed.configureTestingModule({
     imports: [HttpClientModule],
-    declarations: [ JugadorListComponent ],
+    declarations: [ JugadorDetailComponent ],
     providers: [JugadorService]
   })
   .compileComponents();
 }));
 
 beforeEach(() => {
-  fixture = TestBed.createComponent(JugadorListComponent);
+  fixture = TestBed.createComponent(JugadorDetailComponent);
   component = fixture.componentInstance;
-  component.Jugador = [
+  component.jugadorDetail =
     new JugadorDetail(
       faker.datatype.number(),
       faker.name.firstName(),
@@ -38,8 +38,7 @@ beforeEach(() => {
       faker.name.firstName(),
       faker.name.firstName(),
       [],[]
-      )
-  ];
+      );
   fixture.detectChanges();
   debug = fixture.debugElement;
 });
