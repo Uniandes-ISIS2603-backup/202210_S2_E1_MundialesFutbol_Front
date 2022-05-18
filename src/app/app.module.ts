@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaisModule } from './Pais/Pais.module';
@@ -11,6 +10,8 @@ import { ArbitroModule } from './Arbitro/Arbitro.module';
 import { EntrenadorModule } from './Entrenador/Entrenador.module';
 import { PartidoModule } from './Partido/Partido.module';
 import { GolesModule } from './Goles/Goles.module';
+import { ArbitroRoutingModule } from './Arbitro/Arbitro-routing-module';
+import { PartidoRoutingModule } from './Partido/Partido-routing-module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,8 @@ import { GolesModule } from './Goles/Goles.module';
     EntrenadorModule,
     PartidoModule,
     GolesModule,
+    ArbitroRoutingModule,
+    PartidoRoutingModule,
     HttpClientModule
   ],
   providers: [],
