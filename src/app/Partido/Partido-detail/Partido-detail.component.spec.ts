@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PartidoService } from '../Partido.service';
 import { PartidoDetail } from '../PartidoDetail';
 import faker from '@faker-js/faker';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('PartidoDetailComponent', () => {
   let component: PartidoDetailComponent;
@@ -16,9 +17,9 @@ describe('PartidoDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports:[HttpClientModule],
+      imports: [HttpClientModule, RouterTestingModule],
       declarations: [ PartidoDetailComponent ],
-      providers: [PartidoService]
+      providers: [ PartidoService ]
     })
     .compileComponents();
   }));

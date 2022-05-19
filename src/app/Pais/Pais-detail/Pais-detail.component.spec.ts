@@ -9,6 +9,7 @@ import { PaisService } from '../Pais.service';
 import { PaisDetail } from '../PaisDetail';
 import faker from '@faker-js/faker';
 import { Pais } from 'src/app/Pais/Pais';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('PaisDetailComponent', () => {
   let component: PaisDetailComponent;
@@ -16,7 +17,7 @@ describe('PaisDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule],
+      imports: [HttpClientModule, RouterTestingModule],
       declarations: [ PaisDetailComponent ],
       providers: [PaisService]
     })

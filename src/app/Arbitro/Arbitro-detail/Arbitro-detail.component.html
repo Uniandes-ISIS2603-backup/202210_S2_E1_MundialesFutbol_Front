@@ -14,19 +14,21 @@
       <dl>
         <dt class="bold">Mundiales</dt>
         <dd class="caption" *ngFor="let mundial of arbitroDetail.mundiales">
-          {{ mundial.anio }}
+          <a routerLink="/mundiales/{{ mundial.id }}">{{ mundial.anio }}</a>
          </dd>
         <dt>Nacionalidad</dt>
-        <dd>{{ arbitroDetail.nacionalidad.nombre }}</dd>
+        <dd>
+          <a routerLink="/paises/{{ arbitroDetail.nacionalidad.id }}">{{ arbitroDetail.nacionalidad.nombre }}</a>
+        </dd>
         <hr />
         <dt class="bold">Partidos de linea</dt>
         <dd class="caption" *ngFor="let partido of arbitroDetail.partidosLinea">
-          {{ partido.ciudad }} {{ partido.fecha }}
+          <a routerLink="/partidos/{{ partido.id }}">{{ partido.ciudad }} {{ partido.fecha }}</a>
          </dd>
         <hr />
         <dt class="bold">Partidos principal</dt>
         <dd class="caption" *ngFor="let partido of arbitroDetail.partidosPrincipal">
-          {{ partido.ciudad }} {{ partido.fecha }}
+          <a routerLink="/partidos/{{ partido.id }}">{{ partido.ciudad }} {{ partido.fecha }}</a>
          </dd>
       </dl>
     </div>

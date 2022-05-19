@@ -15,11 +15,11 @@
         <dl>
           <dt class="bold">Jueces de linea</dt>
           <dd class="caption" *ngFor="let jueces of partidoDetail.juecesLinea">
-            {{ jueces.nombre }}
+            <a routerLink="/arbitros/{{ jueces.id }}">{{ jueces.nombre }}</a>
            </dd>
           <dt>Jugadores</dt>
           <dd class="caption" *ngFor="let jugadores of partidoDetail.jugadores">
-            {{ jugadores.nombre }} - {{ jugadores.posicion }} - {{ jugadores.numeroCamisa }}
+            <a routerLink="/jugador/{{ jugadores.id }}">{{ jugadores.nombre }} - {{ jugadores.posicion }} - {{ jugadores.numeroCamisa }}</a>
           </dd>
           <hr />
           <dt class="bold">Estadio</dt>

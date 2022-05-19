@@ -1,1 +1,66 @@
-<app-Pais-list></app-Pais-list>
+<!-- Navigation bar -->
+<!-- Navigation bar -->
+
+<nav
+ class="navbar navbar-expand-lg navbar-dark"
+ style="background-color: #1f35f759"
+>
+ <div class="container-fluid">
+   <a class="navbar-brand" href="#">Futboleros</a>
+   <button
+     class="navbar-toggler"
+     type="button"
+     data-bs-toggle="collapse"
+     data-bs-target="#navbarNav"
+     aria-controls="navbarNav"
+     aria-expanded="false"
+     aria-label="Toggle navigation"
+   >
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav">
+       <li class="nav-item">
+         <a
+           class="nav-link active"
+           aria-current="page"
+           routerLink="/mundiales/list"
+           >Mundiales</a
+         >
+       </li>
+       <li class="nav-item">
+         <a class="nav-link active" routerLink="/arbitros/list">Arbitros</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link active" routerLink="/partidos/list">Partidos</a>
+       </li>
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="/goles/list">Goles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="">Entrenadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="/jugador/list">Jugadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="">Equipos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="">Paises</a>
+      </li>
+     </ul>
+   </div>
+ </div>
+</nav>
+
+<!-- Main Router Outlet -->
+<div class="container-fluid" id="principal">
+  <div class="row">
+    <div class="col-md-12">
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+ </div>
