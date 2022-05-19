@@ -17,7 +17,7 @@
         <hr />
         <dt>Mundiales en los que participó:</dt>
         <dd class="caption" *ngFor="let mundial of paisDetail.mundiales">
-          {{ mundial.anio }}
+          <a routerLink="/mundiales/{{ mundial.id }}">{{ mundial.anio }}</a>
          </dd>
         <hr />
       </dl>
