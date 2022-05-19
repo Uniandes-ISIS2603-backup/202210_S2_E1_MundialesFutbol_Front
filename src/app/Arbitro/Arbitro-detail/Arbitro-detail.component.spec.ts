@@ -9,6 +9,7 @@ import { ArbitroService } from '../Arbitro.service';
 import { ArbitroDetail } from '../ArbitroDetail';
 import faker from '@faker-js/faker';
 import { Pais } from 'src/app/Pais/Pais';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('ArbitroDetailComponent', () => {
   let component: ArbitroDetailComponent;
@@ -16,9 +17,9 @@ describe('ArbitroDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule],
+      imports: [HttpClientModule, RouterTestingModule],
       declarations: [ ArbitroDetailComponent ],
-      providers: [ArbitroService]
+      providers: [ ArbitroService ]
     })
     .compileComponents();
   }));

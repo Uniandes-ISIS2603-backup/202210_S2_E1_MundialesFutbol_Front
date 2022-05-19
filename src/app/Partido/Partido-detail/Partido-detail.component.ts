@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { PartidoService } from '../Partido.service';
 import { PartidoDetail } from '../PartidoDetail';
 
@@ -9,11 +10,25 @@ import { PartidoDetail } from '../PartidoDetail';
 })
 export class PartidoDetailComponent implements OnInit {
 
+  partidoId! : string;
   @Input() partidoDetail!: PartidoDetail;
 
-  constructor(private partidoService: PartidoService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private partidoService: PartidoService) { }
+
+    getPartido(){
+      this.partidoService.getPartido(this.partidoId).subscribe(partido=>{
+        this.partidoDetail = partido;
+      })
+    }
 
   ngOnInit() {
+    if(this.partidoDetail === undefined){
+      this.partidoId = this.route.snapshot.paramMap.get('id')!
+      if (this.partidoId) {
+        this.getPartido();
+      }
+    }
   }
-
 }

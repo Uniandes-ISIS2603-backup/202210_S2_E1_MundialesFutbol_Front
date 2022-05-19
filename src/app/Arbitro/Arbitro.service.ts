@@ -20,4 +20,8 @@ getArbitros(): Observable<ArbitroDetail[]> {
     catchError((err) => throwError(() => new Error("Error en el servicio")))
     )
   }
+
+  getArbitro(id: string): Observable<ArbitroDetail> {
+    return this.http.get<ArbitroDetail>(this.apiUrl + "/" + id);
+  }
 }

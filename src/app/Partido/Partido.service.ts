@@ -20,4 +20,7 @@ getPartidos(): Observable<PartidoDetail[]> {
     catchError((err) => throwError(() => new Error("Error en el servicio")))
     )
   }
+getPartido(id: string): Observable<PartidoDetail> {
+  return this.http.get<PartidoDetail>(this.apiUrl + "/" + id);
+  }
 }
