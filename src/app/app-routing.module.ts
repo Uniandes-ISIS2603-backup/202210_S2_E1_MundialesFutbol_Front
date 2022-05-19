@@ -6,7 +6,7 @@ import { JugadorListComponent } from './Jugador/Jugadores-list/Jugadores-list.co
 
 const routes: Routes = [
   { path: '', component: ArbitroListComponent },
-  { path: '', component: PartidoListComponent }
+  { path: '', component: PartidoListComponent },
   { path: '', component: JugadorListComponent }
 ];
 
