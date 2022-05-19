@@ -15,6 +15,7 @@ import { ArbitroRoutingModule } from './Arbitro/Arbitro-routing-module';
 import { PartidoRoutingModule } from './Partido/Partido-routing-module';
 import { JugadorRoutingModule } from './Jugador/Jugador-routing-module';
 import { EntrenadorRoutingModule } from './Entrenador/Entrenador-routing-module';
+import { GolesRoutingModule } from './Goles/Goles-routing-module';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { EntrenadorRoutingModule } from './Entrenador/Entrenador-routing-module'
     PartidoRoutingModule,
     JugadorRoutingModule,
     EntrenadorRoutingModule,
+    GolesRoutingModule,
     HttpClientModule
   ],
   providers: [],
