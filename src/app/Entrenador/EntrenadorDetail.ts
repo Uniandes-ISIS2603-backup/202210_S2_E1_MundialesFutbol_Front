@@ -2,10 +2,7 @@ import { Equipo } from "../Equipo/Equipo";
 import { Entrenador } from "./Entrenador";
 
 export class EntrenadorDetail extends Entrenador {
-
   equipos : Array<Equipo> = [];
-
-
   constructor(
     id :number,
     nombre : string,
