@@ -2,6 +2,12 @@
   <app-Partido-detail [partidoDetail]="selectedPartido"></app-Partido-detail>
 </div>
 
+<div class="form-group">
+  <label for="search-text">Buscar partido</label>
+  <input type="email" class="form-control" id="search-text" aria-describedby="search-text"
+    [(ngModel)]="searchText" placeholder="Ingrese la ciudad del partido"
+    autofocus>
+</div>
 <div class="container-fluid">
   <div class="table">
     <div class="table table-striped table-bordered table-hover">
@@ -12,7 +18,7 @@
         <th>Tipo partido</th>
       </thead>
       <tbody>
-        <tr *ngFor="let partido of partidos"  (click)="onSelected(partido)">
+        <tr *ngFor="let partido of partidos | appFilter: searchText"  (click)="onSelected(partido)">
           <td>{{partido.ciudad}}</td>
           <td>{{partido.fecha}}</td>
           <td>{{partido.estadio}}</td>
