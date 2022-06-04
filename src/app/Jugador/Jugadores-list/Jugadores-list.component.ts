@@ -10,7 +10,7 @@ import { JugadorDetail } from '../JugadorDetail';
 })
 export class JugadorListComponent implements OnInit {
 
-  Jugador: Array<Jugador> = [];
+  Jugador: Array<JugadorDetail> = [];
   selectedJugador!: JugadorDetail;
   selected = false;
   constructor(private JugadorService: JugadorService) { }
