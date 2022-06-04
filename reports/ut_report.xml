@@ -1,48 +1,57 @@
 <testExecutions version="1">
-  <file path="src/app/Mundial/Mundial-list/Mundial-list.component.spec.ts">
-    <testCase name="MundialListComponent should create" duration="116"/>
-    <testCase name="MundialListComponent should have an img element" duration="19"/>
+  <file path="src/app/Partido/Partido-detail/Partido-detail.component.spec.ts">
+    <testCase name="PartidoDetailComponent should create" duration="104"/>
   </file>
-  <file path="src/app/Entrenador/Entrenador-detail/Entrenador-detail.component.spec.ts">
-    <testCase name="EntrenadorDetailComponent should create" duration="28"/>
-  </file>
-  <file path="src/app/Arbitro/Arbitro-detail/Arbitro-detail.component.spec.ts">
-    <testCase name="ArbitroDetailComponent should create" duration="31"/>
-  </file>
-  <file path="src/app/Arbitro/Arbitro-list/Arbitro-list.component.spec.ts">
-    <testCase name="ArbitroListComponent should create" duration="22"/>
-    <testCase name="ArbitroListComponent should have an img element" duration="12"/>
-  </file>
-  <file path="src/app/Pais/Pais-detail/Pais-detail.component.spec.ts">
-    <testCase name="PaisDetailComponent should create" duration="16"/>
+  <file path="src/app/Goles/Goles-list/Goles-list.component.spec.ts">
+    <testCase name="GolesListComponent should create" duration="38"/>
   </file>
   <file path="src/app/Pais/Pais-list/Pais-list.component.spec.ts">
-    <testCase name="PaisListComponent should create" duration="16"/>
-    <testCase name="PaisListComponent should have an img element " duration="13"/>
+    <testCase name="PaisListComponent should create" duration="28"/>
+    <testCase name="PaisListComponent should have an img element " duration="24"/>
+  </file>
+  <file path="src/app/Pais/Pais-detail/Pais-detail.component.spec.ts">
+    <testCase name="PaisDetailComponent should create" duration="23"/>
+  </file>
+  <file path="src/app/Mundial/Mundial-list/Mundial-list.component.spec.ts">
+    <testCase name="MundialListComponent should have an img element" duration="29"/>
+    <testCase name="MundialListComponent should create" duration="21"/>
+  </file>
+  <file path="src/app/Mundial/Mundial-detail/Mundial-detail.component.spec.ts">
+    <testCase name="MundialDetailComponent should create" duration="18"/>
+  </file>
+  <file path="src/app/Partido/Partido-list/Partido-list.component.spec.ts">
+    <testCase name="PartidoListComponent should create" duration="21"/>
+  </file>
+  <file path="src/app/Entrenador/Entrenador.service.spec.ts">
+    <testCase name="Service: Entrenador should ..." duration="3"/>
+  </file>
+  <file path="src/app/Arbitro/Arbitro-list/Arbitro-list.component.spec.ts">
+    <testCase name="ArbitroListComponent should create" duration="30"/>
+    <testCase name="ArbitroListComponent should have an img element" duration="13"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="26"/>
+    <testCase name="AppComponent should have as title 'museums-front'" duration="6"/>
+  </file>
+  <file path="src/app/Arbitro/Arbitro-detail/Arbitro-detail.component.spec.ts">
+    <testCase name="ArbitroDetailComponent should create" duration="21"/>
+  </file>
+  <file path="src/app/Arbitro/Arbitro.service.spec.ts">
+    <testCase name="Service: Arbitro should ..." duration="2"/>
   </file>
   <file path="src/app/Jugador/Jugadores-detail/Jugadores-detail.component.spec.ts">
-    <testCase name="JugadorDetailComponent should create" duration="9"/>
+    <testCase name="JugadorDetailComponent should create" duration="7"/>
+  </file>
+  <file path="src/app/Partido/Partido.service.spec.ts">
+    <testCase name="Service: Partido should ..." duration="2"/>
+  </file>
+  <file path="src/app/Partido/Partido-list/Partido-list.component.spec.ts">
+    <testCase name="PartidoListComponent should create" duration="31"/>
   </file>
   <file path="src/app/Entrenador/Entrenador-list/Entrenador-list.component.spec.ts">
     <testCase name="EntrenadorListComponent should create" duration="12"/>
   </file>
-  <file path="src/app/Goles/Goles-list/Goles-list.component.spec.ts">
-    <testCase name="GolesListComponent should create" duration="24"/>
-  </file>
-  <file path="src/app/Partido/Partido-detail/Partido-detail.component.spec.ts">
-    <testCase name="PartidoDetailComponent should create" duration="14"/>
-  </file>
-  <file path="src/app/Partido/Partido-list/Partido-list.component.spec.ts">
-    <testCase name="PartidoListComponent should create" duration="14"/>
-  </file>
-  <file path="src/app/Mundial/Mundial-detail/Mundial-detail.component.spec.ts">
-    <testCase name="MundialDetailComponent should create" duration="12"/>
-  </file>
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'museums-front'" duration="16"/>
-    <testCase name="AppComponent should create the app" duration="9"/>
-  </file>
-  <file path="src/app/Partido/Partido-list/Partido-list.component.spec.ts">
-    <testCase name="PartidoListComponent should create" duration="13"/>
+  <file path="src/app/Entrenador/Entrenador-detail/Entrenador-detail.component.spec.ts">
+    <testCase name="EntrenadorDetailComponent should create" duration="12"/>
   </file>
 </testExecutions>
