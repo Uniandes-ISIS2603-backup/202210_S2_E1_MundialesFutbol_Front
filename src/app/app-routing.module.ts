@@ -10,14 +10,14 @@ import { PaisListComponent } from './Pais/Pais-list/Pais-list.component';
 import { PaginaPrincipalComponent } from './Pagina/PaginaPrincipal/PaginaPrincipal.component';
 
 const routes: Routes = [
+  { path: '', component: PaginaPrincipalComponent},
   { path: '', component: ArbitroListComponent },
   { path: '', component: PartidoListComponent },
   { path: '', component: JugadorListComponent },
   { path: '', component: PaisListComponent },
   { path: '', component: GolesListComponent },
   { path: '', component: EntrenadorListComponent },
-  { path: '', component: MundialListComponent},
-  { path: '', component: PaginaPrincipalComponent}
+  { path: '', component: MundialListComponent}
 ];
 
 @NgModule({
