@@ -11,10 +11,10 @@ import { EntrenadorDetail } from './EntrenadorDetail';
 
 export class EntrenadorService {
 
-  private apiUrl: string = environment.baseUrl + "/api/entrenador"
+  private apiUrl: string = environment.baseUrl + "/api/entrenadores"
 constructor(private http: HttpClient) { }
 
-getEntrenador(): Observable<EntrenadorDetail[]> {
+getEntrenadores(): Observable<EntrenadorDetail[]> {
   return this.http
   .get<EntrenadorDetail[]>(this.apiUrl)
   .pipe(

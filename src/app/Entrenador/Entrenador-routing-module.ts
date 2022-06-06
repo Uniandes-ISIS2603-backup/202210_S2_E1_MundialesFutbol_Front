@@ -4,7 +4,7 @@ import { EntrenadorListComponent } from './Entrenador-list/Entrenador-list.compo
 import { EntrenadorDetailComponent } from './Entrenador-detail/Entrenador-detail.component';
 
 const routes: Routes = [{
- path: 'arbitros',
+ path: 'entrenadores',
  children: [
    {
      path: 'list',

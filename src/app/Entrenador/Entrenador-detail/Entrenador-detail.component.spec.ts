@@ -5,8 +5,10 @@ import { DebugElement } from '@angular/core';
 
 import { EntrenadorDetailComponent } from './Entrenador-detail.component';
 import faker from '@faker-js/faker';
-import { Equipo } from 'src/app/Equipo/Equipo';
 import { EntrenadorDetail } from '../EntrenadorDetail';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterTestingModule } from '@angular/router/testing';
+import { EntrenadorService } from '../Entrenador.service';
 
 describe('EntrenadorDetailComponent', () => {
   let component: EntrenadorDetailComponent;
@@ -15,7 +17,9 @@ describe('EntrenadorDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EntrenadorDetailComponent ]
+      imports: [HttpClientModule, RouterTestingModule],
+      declarations: [ EntrenadorDetailComponent ],
+      providers: [ EntrenadorService ]
     })
     .compileComponents();
   }));
@@ -24,7 +28,7 @@ describe('EntrenadorDetailComponent', () => {
     fixture = TestBed.createComponent(EntrenadorDetailComponent);
     component = fixture.componentInstance;
 
-    component.Entrenador = new EntrenadorDetail(
+    component.entrenadorDetail = new EntrenadorDetail(
       faker.datatype.number(),
       faker.name.firstName(),
       faker.name.firstName(),

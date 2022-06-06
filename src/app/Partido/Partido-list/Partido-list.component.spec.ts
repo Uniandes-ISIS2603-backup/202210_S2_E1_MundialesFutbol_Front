@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PartidoService } from '../Partido.service';
 import { PartidoDetail } from '../PartidoDetail';
 import faker from '@faker-js/faker';
+import { FilterPipe } from '../Partido-pipe';
 
 describe('PartidoListComponent', () => {
   let component: PartidoListComponent;
@@ -17,7 +18,7 @@ describe('PartidoListComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports:[HttpClientModule],
-      declarations: [ PartidoListComponent ],
+      declarations: [ PartidoListComponent, FilterPipe ],
       providers: [PartidoService]
     })
     .compileComponents();

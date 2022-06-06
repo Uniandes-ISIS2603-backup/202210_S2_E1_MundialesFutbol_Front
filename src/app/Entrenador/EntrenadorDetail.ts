@@ -11,6 +11,6 @@ export class EntrenadorDetail extends Entrenador {
     equipos : Array<Equipo>
   ) {
     super(id, nombre, imagenEntrenador, biografia);
-    this.equipos = this.equipos;
+    this.equipos = equipos;
   }
 }

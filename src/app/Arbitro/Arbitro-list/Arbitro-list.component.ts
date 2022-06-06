@@ -10,6 +10,7 @@ import { ArbitroDetail } from '../ArbitroDetail';
 export class ArbitroListComponent implements OnInit {
 
   arbitros: Array<ArbitroDetail> = [];
+  orden: number = 0;
   selectedArbitro!: ArbitroDetail;
   selected = false;
   constructor(private arbitroService: ArbitroService) { }
@@ -23,6 +24,15 @@ export class ArbitroListComponent implements OnInit {
   onSelected(arbitro: ArbitroDetail): void {
     this.selected = true;
     this.selectedArbitro = arbitro;
+  }
+
+  sortByName(): void {
+    this.orden += 1;
+    if (this.orden % 2 == 0) {
+      this.arbitros.sort((a, b) => a.nombre.localeCompare(b.nombre));
+    } else {
+      this.arbitros.reverse();
+    }
   }
 
   ngOnInit() {

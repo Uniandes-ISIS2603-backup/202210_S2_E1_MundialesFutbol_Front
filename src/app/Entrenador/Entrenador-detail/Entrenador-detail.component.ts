@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { EntrenadorService } from '../Entrenador.service';
 import { EntrenadorDetail } from '../EntrenadorDetail';
 
 @Component({
@@ -9,8 +10,8 @@ import { EntrenadorDetail } from '../EntrenadorDetail';
 export class EntrenadorDetailComponent implements OnInit {
 
   @Input() entrenadorDetail! : EntrenadorDetail;
-  Entrenador: EntrenadorDetail | undefined;
-  constructor() { }
+
+  constructor(private entrenadorService: EntrenadorService) { }
 
   ngOnInit() {
   }

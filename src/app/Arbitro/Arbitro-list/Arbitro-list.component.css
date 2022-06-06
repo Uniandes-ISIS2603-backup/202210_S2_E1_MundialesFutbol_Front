@@ -7,5 +7,60 @@ img {
  button.link {
   background:none;
   border:none;
-  color: #13757e;
+  color: #1f35f759;
+}
+
+/* General button style */
+.btn {
+  border: none;
+  font-family: 'Lato';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-sep:before {
+  background: rgba(0,0,0,0.15);
+}
+
+/* Button 1 */
+.btn-1 {
+  background: #1f35f759;
+  color: #fff;
+}
+
+.btn-1:hover {
+  background: #1f35f759;
 }

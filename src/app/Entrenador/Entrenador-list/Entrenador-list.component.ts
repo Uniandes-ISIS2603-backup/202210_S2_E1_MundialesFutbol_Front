@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Entrenador } from '../Entrenador';
 import { EntrenadorService } from '../Entrenador.service';
 import { EntrenadorDetail } from '../EntrenadorDetail';
 
@@ -10,14 +9,14 @@ import { EntrenadorDetail } from '../EntrenadorDetail';
 })
 export class EntrenadorListComponent implements OnInit {
 
-  Entrenador: Array<Entrenador> = [];
+  Entrenadores: Array<EntrenadorDetail> = [];
   selectedEntrenador!: EntrenadorDetail;
   selected = false;
   constructor(private EntrenadorService: EntrenadorService) { }
 
   getEntrenador(): void {
-    this.EntrenadorService.getEntrenador().subscribe((Entrenador) => {
-      this.Entrenador = Entrenador;
+    this.EntrenadorService.getEntrenadores().subscribe((Entrenadores) => {
+      this.Entrenadores = Entrenadores;
     });
   }
 

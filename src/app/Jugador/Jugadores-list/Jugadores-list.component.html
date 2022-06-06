@@ -1,28 +1,33 @@
 <div class="container-fluid">
-  <div class="table">
-    <div class="table table-striped table-bordered table-hover">
-      <thead>
-        <th>id</th>
-        <th>nombre</th>
-        <th>edad</th>
-        <th>foto</th>
-        <th>fecha de Nacimiento</th>
-        <th>liga Actual</th>
-        <th>equipo Actual</th>
-        <th>posicion</th>
-      </thead>
-      <tbody>
-        <tr *ngFor="let jugador of Jugador">
-          <td>{{jugador.id}}</td>
-          <td>{{jugador.nombre}}</td>
-          <td>{{jugador.edad}}</td>
-          <td>{{jugador.foto}}</td>
-          <td>{{jugador.fechaNacimiento}}</td>
-          <td>{{jugador.ligaActual}}</td>
-          <td>{{jugador.equipoActual}}</td>
-          <td>{{jugador.posicion}}</td>
-        </tr>
-      </tbody>
+  <div class="row">
+    <div class="col-sm">
+      <div class="table">
+        <div class="table table-striped table-bordered table-hover">
+          <thead>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Liga Actual</th>
+            <th>Equipo Actual</th>
+            <th>Posicion</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let jugador of Jugador" (click) = "onSelected(jugador)">
+              <td>{{jugador.nombre}}</td>
+              <td>{{jugador.edad}}</td>
+              <td>{{jugador.fechaNacimiento}}</td>
+              <td>{{jugador.ligaActual}}</td>
+              <td>{{jugador.equipoActual}}</td>
+              <td>{{jugador.posicion}}</td>
+            </tr>
+          </tbody>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div *ngIf="selected">
+        <app-Jugadores-detail [jugadorDetail]="selectedJugador"></app-Jugadores-detail>
+      </div>
     </div>
   </div>
 </div>

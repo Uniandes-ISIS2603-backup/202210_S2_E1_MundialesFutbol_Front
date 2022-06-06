@@ -7,6 +7,7 @@ import { JugadorListComponent } from './Jugador/Jugadores-list/Jugadores-list.co
 import { EntrenadorListComponent } from './Entrenador/Entrenador-list/Entrenador-list.component';
 import { MundialListComponent } from './Mundial/Mundial-list/Mundial-list.component';
 import { PaisListComponent } from './Pais/Pais-list/Pais-list.component';
+import { PaginaPrincipalComponent } from './Pagina/PaginaPrincipal/PaginaPrincipal.component';
 
 const routes: Routes = [
   { path: '', component: ArbitroListComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: '', component: PaisListComponent },
   { path: '', component: GolesListComponent },
   { path: '', component: EntrenadorListComponent },
-  { path: '', component: MundialListComponent}
+  { path: '', component: MundialListComponent},
+  { path: '', component: PaginaPrincipalComponent}
 ];
 
 @NgModule({

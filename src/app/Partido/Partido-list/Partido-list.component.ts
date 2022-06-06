@@ -12,6 +12,7 @@ export class PartidoListComponent implements OnInit {
   partidos: Array<PartidoDetail> = [];
   selectedPartido!: PartidoDetail;
   selected = false;
+  searchText = '';
   constructor(private partidoService: PartidoService) { }
 
   getPartidos(): void {

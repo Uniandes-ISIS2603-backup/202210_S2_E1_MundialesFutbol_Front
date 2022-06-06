@@ -17,11 +17,13 @@ import { JugadorRoutingModule } from './Jugador/Jugador-routing-module';
 import { GolesRoutingModule } from './Goles/Goles-routing-module';
 import { EntrenadorRoutingModule } from './Entrenador/Entrenador-routing-module';
 import { PaisRoutingModule } from './Pais/Pais-routing-module';
+import { PaginaModule } from './Pagina/Pagina.module';
+import { PaginaRoutingModule } from './Pagina/Pagina.routing';
 
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    AppComponent,
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -39,7 +41,9 @@ import { PaisRoutingModule } from './Pais/Pais-routing-module';
     JugadorRoutingModule,
     EntrenadorRoutingModule,
     GolesRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    PaginaModule,
+    PaginaRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
