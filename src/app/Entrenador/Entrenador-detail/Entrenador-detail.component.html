@@ -1,12 +1,12 @@
 <div class="container-fluid">
-  <p class="h3 p-3">{{ entrenadorDetail.nombre }}</p>
+  <p class="h3 p-3">{{ entrenadorDetail?.nombre }}</p>
   <div class="row">
     <div class="col-2">
       <div class="thumb">
         <img
           class="img-fluid"
-          src="{{ entrenadorDetail.imgEntrenador}}"
-          alt="{{ entrenadorDetail.nombre }}"
+          src="{{ entrenadorDetail?.imgEntrenador}}"
+          alt="{{ entrenadorDetail?.nombre }}"
         />
       </div>
     </div>
@@ -18,7 +18,7 @@
          </dd>
 
         <dt>Biografia</dt>
-        <dd>{{ entrenadorDetail.biografia }}</dd>
+        <dd>{{ entrenadorDetail?.biografia }}</dd>
         <hr />
 
       </dl>
