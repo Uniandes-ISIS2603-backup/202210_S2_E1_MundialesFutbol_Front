@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <p class="h3 p-3">{{ jugadorDetail.nombre }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img
+          class="img-fluid"
+          src="{{ jugadorDetail.foto }}"
+          alt="{{ jugadorDetail.nombre }}"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt class="bold">Partidos</dt>
+        <dd class="caption" *ngFor="let partido of jugadorDetail.partido">
+          <a routerLink="/partidos/{{ partido.id }}">{{ partido.ciudad }} : {{partido.fecha}}</a>
+         </dd>
+      </dl>
+    </div>
+  </div>
+ </div>

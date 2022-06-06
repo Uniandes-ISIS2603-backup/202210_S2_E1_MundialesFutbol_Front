@@ -6,7 +6,6 @@
           <thead>
             <th>Nombre</th>
             <th>Edad</th>
-            <th>Foto</th>
             <th>Fecha de Nacimiento</th>
             <th>Liga Actual</th>
             <th>Equipo Actual</th>
@@ -16,7 +15,6 @@
             <tr *ngFor="let jugador of Jugador" (click) = "onSelected(jugador)">
               <td>{{jugador.nombre}}</td>
               <td>{{jugador.edad}}</td>
-              <td><img src="{{jugador.foto}}" alt="{{jugador.nombre}}" style = "display:block;height: 20rem;margin-left: auto;margin-right: auto;"></td>
               <td>{{jugador.fechaNacimiento}}</td>
               <td>{{jugador.ligaActual}}</td>
               <td>{{jugador.equipoActual}}</td>

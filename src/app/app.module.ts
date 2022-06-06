@@ -17,11 +17,13 @@ import { JugadorRoutingModule } from './Jugador/Jugador-routing-module';
 import { GolesRoutingModule } from './Goles/Goles-routing-module';
 import { EntrenadorRoutingModule } from './Entrenador/Entrenador-routing-module';
 import { PaisRoutingModule } from './Pais/Pais-routing-module';
+import { PaginaPrincipalComponent } from './PaginaPrincipal/PaginaPrincipal.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [	
+    AppComponent,
+      PaginaPrincipalComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
